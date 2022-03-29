@@ -45,5 +45,10 @@ class MainActivity : AppCompatActivity() {
             dialog.show()
         }
 
+        binding.btnCustomDialogFrag.setOnClickListener {
+            val dialogFragment = CustomDialogFragment("musnadil")
+            dialogFragment.show(supportFragmentManager,null)
+
+        }
     }
 }
